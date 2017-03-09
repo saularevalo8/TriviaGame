@@ -1,4 +1,3 @@
-$(document).ready(function() {
     var incorrect = 0;
     var correct = 0;
     var noResponse = 0;
@@ -116,7 +115,7 @@ $(document).ready(function() {
         })
 
     }
-
+    startGame();
 
     function createStage() {
 
@@ -135,7 +134,7 @@ $(document).ready(function() {
             var quest = $("<h2>" + currentQuestion.question + "</h2>");
 
 
-     
+
             $("#main-div").append(timerDisplay);
             timerDisplay.append(timerNum);
             counter();
@@ -295,5 +294,3 @@ $(document).ready(function() {
 
     }
     startGame();
-
-});
