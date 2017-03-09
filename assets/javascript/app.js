@@ -10,7 +10,7 @@ $(document).ready(function() {
     var emptyArr = false;
     var answered = [];
     var questions = [{
-        "question": "How long is a round in boxing?",
+        "question": "How long is a round of boxing?",
         "correct_answer": "3 mins",
         "answers": [
             "3 mins",
@@ -28,10 +28,10 @@ $(document).ready(function() {
             "Orange Tree"
         ]
     }, {
-        "question": "What's the name of Barbie Doll's boyfriend??",
+        "question": "What's the name of Barbie Doll's boyfriend?",
         "correct_answer": "Ken",
         "answers": [
-            "Tony",
+            "Ken",
             "Kyle",
             "Chris",
             "Mike"
@@ -57,7 +57,7 @@ $(document).ready(function() {
         ]
     }, {
 
-        "question": "How many reindeer does Santa have?",
+        "question": "How many reindeers does Santa have?",
         "correct_answer": "9",
         "answers": [
             "5",
@@ -77,7 +77,7 @@ $(document).ready(function() {
         ]
     }, {
 
-        "question": "What is the nickname of Alcatraz Prison?",
+        "question": "What is the nickname of the Alcatraz Prison?",
         "correct_answer": "The rock",
         "answers": [
             "The rock",
@@ -130,18 +130,16 @@ $(document).ready(function() {
             $("#main-div").empty();
             $("#button-div").empty();
             var currentQuestion = questions[Math.floor(Math.random() * questions.length)];
-            //var view = $("<div></div>").addClass("stage");
             var timerDisplay = $("<h3>Time Remaining: </h3>");
             var timerNum = $("<span>" + timer + "</span>").addClass("timer text-center");
             var quest = $("<h2>" + currentQuestion.question + "</h2>");
 
 
-            //$("#main-div").append(view);
+     
             $("#main-div").append(timerDisplay);
             timerDisplay.append(timerNum);
             counter();
             $("#main-div").append(quest);
-
             for (var i = 0; i < currentQuestion.answers.length; i++) {
 
                 var answerButtons = $("<button></button>").addClass("answer btn btn-default btn-lg btn-block").html(currentQuestion.answers[i]);
