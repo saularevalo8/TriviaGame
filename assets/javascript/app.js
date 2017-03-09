@@ -131,7 +131,7 @@ $(document).ready(function() {
             $("#button-div").empty();
             var currentQuestion = questions[Math.floor(Math.random() * questions.length)];
             //var view = $("<div></div>").addClass("stage");
-            var timerDisplay = $("<h3>Remaining time: </h3>");
+            var timerDisplay = $("<h3>Time Remaining: </h3>");
             var timerNum = $("<span>" + timer + "</span>").addClass("timer text-center");
             var quest = $("<h2>" + currentQuestion.question + "</h2>");
 
