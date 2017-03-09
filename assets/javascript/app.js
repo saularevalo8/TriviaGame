@@ -179,7 +179,7 @@
     function TimeOutMsg() {
 
         resetTimer();
-        // clearInterval(clock);
+        
 
         var timeOutMsg = $("<div>").addClass("message");
 
